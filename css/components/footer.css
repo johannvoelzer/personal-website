@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.801);
+    background-color: rgb(13, 27, 39);
+}
+
+.footer__copyright {
+    padding-left: 20px;
+}
+
+.footer__imprint {
+    padding-right: 20px;
+}
+
+.footer__imprint:hover {
+    cursor: pointer;
+    color: white;
+}

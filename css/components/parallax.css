@@ -1,0 +1,46 @@
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-image: 
+        linear-gradient(40deg,
+        rgba(0,0,0,1) 0,
+        rgba(0,0,0,.96) 19%,
+        rgba(0,0,0,.88) 34%,
+        rgba(0,0,0,.78) 47%,
+        rgba(0,0,0,.64) 56%,
+        rgba(0,0,0,.5) 65%,
+        rgba(0,0,0,.32) 73%,
+        rgba(0,0,0,.16) 80%,
+        rgba(0,0,0,.08) 86%,
+        rgba(0,0,0,.04) 91%,
+        rgba(0,0,0,.02) 95%,
+        rgba(0,0,0,.01) 98%,
+        transparent), 
+        url("../../images/background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.parallax-heading {
+    align-self: flex-end;
+    margin: 0 -20px 20px 20px;
+    color: white;
+}
+
+.parallax-heading__bottom {
+    color: rgb(0, 204, 255);
+}
+
+.parallax-picture {
+    margin-top: 100px;
+    top: 0;
+    right: 0;
+    align-self: flex-end;
+    max-width: 40%;
+}
+
+.content {
+    position: relative;
+}
