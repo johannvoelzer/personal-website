@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="icons/JV.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johann Völzer</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./main.js" defer></script>
+    <link rel="apple-touch-icon" href="icons/JV.png" />
 </head>
 <body>
     <header id="header">
@@ -31,7 +33,6 @@
                     <img class="skills-overview__icon" src="icons/html.png" loading="lazy" alt="html icon"/>
                     <img class="skills-overview__icon" src="icons/css.png" loading="lazy" alt="css icon"/>
                     <img class="skills-overview__icon" src="icons/javascript.png" loading="lazy" alt="javascript icon"/>
-                    <img class="skills-overview__icon" src="icons/node.png" loading="lazy" alt="node icon"/>
                     <img class="skills-overview__icon" src="icons/react.png" loading="lazy" alt="react icon"/>
                     <img class="skills-overview__icon" src="icons/php.png" loading="lazy" alt="php icon"/>
                     <img class="skills-overview__icon" src="icons/git.png" loading="lazy" alt="git icon"/>
@@ -41,17 +42,28 @@
             <div>
                 <div id="projects">
                     <h3 class="projects__headline">PROJECTS</h3>
-                    <div class="projects__responsive">
-                        <img class="projects__responsive--image" src="images/my-app.png" loading="lazy" alt="my app" />
-                        <div class="projects__responsive--description">
-                            <h4>MY APP TITLE</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                Inventore rerum blanditiis odio quia alias corrupti minima vitae hic asperiores atque nostrum ipsa, 
-                                repudiandae, eos excepturi ipsum obcaecati velit cum ad!</p>
-                            <p>You should download it!</p>
-                            <button class="responsive__description--button">SHOW MORE</button>
+                    <div class="projects__responsive--slider">
+                        <div id="project1" class="projects__responsive">
+                            <img class="projects__responsive--image" src="images/my-app.png" loading="lazy" alt="my app" />
+                            <div class="projects__responsive--description">
+                                <h4>MY FIRST APP</h4>
+                                <p>THIS IS A VERY NICE APP</p>
+                                <button class="responsive__description--button">SHOW MORE</button>
+                            </div>
+                        </div>
+                        <div id="project2" style="margin-top: 0.1px" class="projects__responsive">
+                            <img class="projects__responsive--image" src="images/investoo-app.png" loading="lazy" alt="my app" />
+                            <div class="projects__responsive--description">
+                                <h4>INVESTOO</h4>
+                                <p class="responsive__description--tools">WORDPRESS + DIVI</p>
+                                <p class="responsive__description--details">a comprehensive website to learn about investment fundamentals</p>
+                                <p class="responsive__description--details">investoo compares the best brokers and helps you to make smarter investment decisions</p>
+                                <a href="https://www.investoo.de" target="_blank"><button class="responsive__description--button">SHOW MORE</button></a>
+                            </div>
                         </div>
                     </div>
+                    <a href="#project1" ><img class="btn prev-btn" src="icons/arrow-left.svg" loading="lazy" alt="arrow left"/></a>
+                    <a href="#project2" ><img class="btn next-btn" src="icons/arrow-right.svg" loading="lazy" alt="arrow right"/></a>
                 </div>
                 <div id="experience">
                     <h3 class="experience__headline">EXPERIENCE</h3>
@@ -170,7 +182,10 @@
     <footer>
         <div class="footer">
             <p class="footer__copyright">© 2020 Johann Völzer</p>
-            <p class="footer__imprint">Imprint</p>
+            <div class="footer__imprint">
+                <a href="https://www.xing.com/profile/Johann_Voelzer3" class="footer__imprint--link">Xing</a>
+                <a href="https://github.com/johannvoelzer" class="footer__imprint--link">Github</>
+            </div>
         </div>
     </footer>
 </body>

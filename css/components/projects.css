@@ -8,7 +8,44 @@
 }
 
 .projects__headline {
+    margin-bottom: -78px;
     color: #44474B;
+}
+
+.projects__responsive--slider {
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory; 
+}
+
+.projects__responsive--slider > div {
+    scroll-snap-align: start;
+}
+
+.projects__responsive {
+    padding-top: 78px;
+    width: 100%;
+    flex-shrink: 0;
+    scroll-behavior: smooth;
+}
+
+.btn {
+    position: absolute;
+    top: 340px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 20px;
+    width:30px;
+}
+
+.next-btn {
+    right: 20px;
+    width: 30px;
 }
 
 .projects__responsive--image {
@@ -35,6 +72,16 @@
 
 .projects__responsive--description {
     text-align: center;
+}
+
+.responsive__description--tools {
+    font-weight: 100;
+    color: rgb(0, 204, 255);
+}
+
+.responsive__description--details {
+    font-size: 16px;
+    color: rgb(173, 173, 173);
 }
 
 .responsive__description--button {

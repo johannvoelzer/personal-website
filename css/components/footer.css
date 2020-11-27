@@ -7,15 +7,21 @@
     background-color: rgb(13, 27, 39);
 }
 
+.footer__imprint {
+    display: flex;
+    align-items: center;
+}
+
 .footer__copyright {
     padding-left: 20px;
 }
 
-.footer__imprint {
+.footer__imprint--link {
     padding-right: 20px;
+    color: white;
 }
 
-.footer__imprint:hover {
+.footer__imprint--link:hover {
     cursor: pointer;
     color: white;
 }

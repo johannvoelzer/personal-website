@@ -59,10 +59,17 @@
     }
     .projects__responsive {
         display: grid;
-        grid-template-columns: calc(50% - 70px) calc(50% + 70px);
+        padding-top: 95px;
+        grid-template-columns: calc(50% - 70px) 50%;
+    }
+    .projects__headline {
+        margin-bottom: -95px;
     }
     .projects__responsive--description {
         text-align: left;
+    }
+    .responsive__description--details {
+        font-size: 20px;
     }
     .responsive__description--button {
         margin: 12px;
@@ -103,7 +110,11 @@
         height: 90px;
     }
     .projects__responsive {
-        grid-template-columns: calc(50% - 90px) calc(50% + 90px);
+        padding-top: 120px;
+        grid-template-columns: calc(50% - 90px) 50%;
+    }
+    .projects__headline {
+        margin-bottom: -120px;
     }
     .responsive__description--button {
         margin: 30px;
