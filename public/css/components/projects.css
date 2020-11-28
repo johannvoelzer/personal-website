@@ -1,0 +1,100 @@
+#projects {
+    position: relative;
+    margin-top: -200px;
+    padding: 20px;
+    background: #151A1F;
+    color: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+.projects__headline {
+    margin-bottom: -78px;
+    color: #44474B;
+}
+
+.projects__responsive--slider {
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory; 
+}
+
+.projects__responsive--slider > div {
+    scroll-snap-align: start;
+}
+
+.projects__responsive {
+    padding-top: 78px;
+    width: 100%;
+    flex-shrink: 0;
+    scroll-behavior: smooth;
+}
+
+.btn {
+    position: absolute;
+    top: 280px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 20px;
+    width:30px;
+}
+
+.next-btn {
+    right: 20px;
+    width: 30px;
+}
+
+.projects__responsive--image {
+    display: block;
+    margin: 40px auto;
+    max-width: 80%;
+    max-height: 400px;
+    animation: updown 3s ease infinite;
+}
+
+@keyframes updown {
+    0% {
+      transform: translateY(-16px);
+    }
+  
+    50% {
+      transform: translateY(0px);
+    }
+  
+    100% {
+      transform: translateY(-16px);
+    }
+}
+
+.projects__responsive--description {
+    text-align: center;
+}
+
+.responsive__description--tools {
+    font-weight: 100;
+    color: rgb(0, 204, 255);
+}
+
+.responsive__description--details {
+    font-size: 16px;
+    color: rgb(173, 173, 173);
+}
+
+.responsive__description--button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    background: #00B881;
+    border: none;
+    border-radius: 10px;
+}
+
+.responsive__description--button:hover {
+    cursor: pointer;
+    background: rgb(3, 202, 142);
+}

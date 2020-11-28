@@ -42,3 +42,18 @@ function scrollHandler() {
     }
   }
 }
+
+document.getElementById("contact__send").addEventListener("click", validateForm);
+function validateForm() {
+  //gets the email
+  let email = document.getElementById("contact-email").value;
+  //gets the message
+  let message = document.getElementById("contact-message").value;
+
+  //checks if all fields have been filled before sending message.
+  if (name.trim() == "" || email.trim() == "" || message.trim() == "") {
+    alert("all fields must be filled");
+  } else {
+    sendMail(email, message);
+  }
+}

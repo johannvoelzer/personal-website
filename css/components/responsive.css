@@ -55,7 +55,7 @@
     }
     .skills-overview__icon {
         padding: 18px;
-        height: 74px;
+        height: 60px;
     }
     .projects__responsive {
         display: grid;
@@ -107,7 +107,7 @@
     }
     .skills-overview__icon {
         padding: 24px;
-        height: 90px;
+        height: 70px;
     }
     .projects__responsive {
         padding-top: 120px;

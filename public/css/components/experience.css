@@ -1,0 +1,123 @@
+#experience {
+  padding: 20px 0;
+  background: #1F242C;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+.experience__headline {
+  color: #4B5055;
+}
+  
+.timeline {
+  position: relative;
+}
+  
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #4B5055;
+  top: 20px;
+  bottom: 110px;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline__container {
+  position: relative;
+}
+
+.timeline__container::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 17px;
+  right: -14px;
+  z-index: 100;
+  border-radius: 50%;
+  background-color: white;
+  border: 4px solid rgb(218, 10, 90);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.24),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.25),
+  0 12.5px 10px rgba(0, 0, 0, 0.26),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.27),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.285),
+  0 100px 80px rgba(0, 0, 0, 0.32);
+}
+
+.timeline__container--left {
+  padding: 10px 40px 10px 30px;
+  width: calc(50% - 70px);
+}
+
+.timeline__container--right {
+  padding: 10px 30px 10px 40px;
+  left: 50%;
+  width: calc(50% - 70px);
+}
+
+.timeline__container--left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 1px;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline__container--right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 1px;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.timeline__container--right::after {
+  left: -14px;
+}
+
+.timeline__container--content {
+  padding: 14px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.24),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.25),
+  0 12.5px 10px rgba(0, 0, 0, 0.26),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.27),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.285),
+  0 100px 80px rgba(0, 0, 0, 0.32);
+}
+
+.container__content--details-date {
+  margin: 0;
+  color: rgb(218, 10, 90);
+}
+
+.container__content--details-location {
+  margin: 0;
+  color: #4b50555e;
+}
+
+.container__content--position {
+  margin: 20px 0 0;
+}
+
+.container__content--company {
+  margin: 0 0 0.5em;
+  color: #4b50555e;
+}
+
+.container__content--description {
+  margin-top: 18px;
+  padding-left: 18px;
+}

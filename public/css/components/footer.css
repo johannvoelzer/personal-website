@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.801);
+    background-color: rgb(13, 27, 39);
+}
+
+.footer__imprint {
+    display: flex;
+    align-items: center;
+}
+
+.footer__copyright {
+    padding-left: 20px;
+}
+
+.footer__imprint--link {
+    padding-right: 20px;
+    color: white;
+}
+
+.footer__imprint--link:hover {
+    cursor: pointer;
+    color: white;
+}
