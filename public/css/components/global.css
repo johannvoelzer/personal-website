@@ -8,6 +8,13 @@ body {
     background: rgb(13, 27, 39);
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 h2 {
     margin: 0;
     font-size: 26px;
