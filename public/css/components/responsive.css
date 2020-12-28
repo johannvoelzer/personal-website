@@ -88,6 +88,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .contact__background {
+    margin: 110px 30px;
+  }
 }
 
 @media (min-width: 1024px) {

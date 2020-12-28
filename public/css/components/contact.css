@@ -31,11 +31,6 @@
   background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 }
-@media (min-width: 768px) {
-  .contact__background {
-    margin: 110px 30px;
-  }
-}
 
 .contact__headline {
   color: white;
