@@ -1,4 +1,4 @@
 # my first personal website
 
-## made with plain HTML, CSS and JavaScript
+### made with plain HTML, CSS and JavaScript
 
