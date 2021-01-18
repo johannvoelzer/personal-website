@@ -32,6 +32,12 @@
   border-radius: 10px;
 }
 
+@media (min-width: 768px) {
+  .contact__background {
+    margin: 110px 30px;
+  }
+}
+
 .contact__headline {
   color: white;
 }
@@ -55,6 +61,17 @@
   border-radius: 6px;
 }
 
+::placeholder {
+  color: rgb(51, 51, 51);
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: rgb(51, 51, 51);
+}
+::-ms-input-placeholder {
+  color: rgb(51, 51, 51);
+}
+
 .form__input--textarea {
   resize: none;
 }
@@ -64,12 +81,12 @@
   padding: 10px 20px;
   font-weight: bold;
   color: white;
-  background: rgb(0, 184, 129);
+  background: #18ad8f;
   border-radius: 10px;
   border: none;
 }
 
 .contact__form--button:hover {
   cursor: pointer;
-  background: rgb(3, 202, 142);
+  background: #1abc9c;
 }

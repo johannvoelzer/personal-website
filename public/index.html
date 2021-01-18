@@ -17,6 +17,14 @@
             <button class="header-menu__button" onclick="window.location.href='#experience'">EXPERIENCE</button>
             <button class="header-menu__button" onclick="window.location.href='#contact'">CONTACT</button>
         </nav>
+        <a href="#menu" id="toggle"><span></span></a>
+        <div id="menu">
+            <ul>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
     </header>
     <main id="main">
         <section class="parallax">
@@ -24,7 +32,7 @@
                 <h2 class="parallax-heading__top" data-direction="up" data-speed="0.34">I AM A PASSIONATE</h2>
                 <h2 class="parallax-heading__bottom" data-direction="up" data-speed="0.3">WEB DEVELOPER</h2>
             </div>
-            <img class="parallax-picture" src="images/profile.png" alt="Johann Völzer" data-direction="down" data-speed="0.8"/>
+            <img class="parallax-picture" src="images/profile.png" alt="Johann Völzer" data-direction="down" data-speed="0.6"/>
         </section>
         <section class="content" >
             <div id="skills" data-direction="up" data-speed="0.06">
@@ -41,124 +49,130 @@
             </div>
             <div>
                 <div id="projects">
-                    <h3 class="projects__headline">PROJECTS</h3>
-                    <div class="projects__responsive--slider">
-                        <div id="project1" class="projects__responsive">
-                            <img class="projects__responsive--image" src="images/mintoz-app.png" loading="lazy" alt="mintoz app" />
-                            <div class="projects__responsive--description">
-                                <h4 class="responsive__description--title">MINTOZ</h4>
-                                <p class="responsive__description--tools">REACT + FIREBASE</p>
-                                <p class="responsive__description--details">the easiest way to pick the right stocks for your portfolio</p>
-                                <p class="responsive__description--details">mintoz provides you with detailed company information, analysts view and a side-by-side comparison</p>
-                                <a href="https://mintoz.web.app" target="_blank"><button class="responsive__description--button">SHOW MORE</button></a>
+                    <div id="projects">
+                        <div class="projects">
+                            <h3 class="projects__headline">PROJECTS</h3>
+                            <div id="project1" class="projects__responsive">
+                                <div class="projects__responsive--background">
+                                    <img class="projects__responsive--image" src="images/mintoz-app.png" loading="lazy" alt="mintoz app" />
+                                </div>
+                                <div class="projects__responsive--description">
+                                    <h4 class="responsive__description--title">MINTOZ</h4>
+                                    <p class="responsive__description--tools">REACT + FIREBASE</p>
+                                    <p class="responsive__description--details">the easiest way to pick the right stocks for your portfolio</p>
+                                    <p class="responsive__description--details">mintoz provides you with detailed company informations, related news and market insights</p>
+                                    <a href="https://mintoz.web.app" target="_blank"><button class="responsive__description--button">OPEN WEBSITE</button></a>
+                                </div>
                             </div>
-                        </div>
-                        <div id="project2" style="margin-top: 0.1px" class="projects__responsive">
-                            <img class="projects__responsive--image" src="images/investoo-app.png" loading="lazy" alt="investoo app" />
-                            <div class="projects__responsive--description">
-                                <h4 class="responsive__description--title">INVESTOO</h4>
-                                <p class="responsive__description--tools">WORDPRESS + DIVI</p>
-                                <p class="responsive__description--details">a comprehensive website to learn about investment fundamentals</p>
-                                <p class="responsive__description--details">investoo compares the best brokers and helps you to make smarter investment decisions</p>
-                                <a href="https://www.investoo.de" target="_blank"><button class="responsive__description--button">SHOW MORE</button></a>
+                            <div id="project2" style="margin-top: 0.1px" class="projects__responsive">
+                                <div class="projects__responsive--background">
+                                    <img class="projects__responsive--image" src="images/investoo-app.png" loading="lazy" alt="investoo app" />
+                                </div>
+                                <div class="projects__responsive--description">
+                                    <h4 class="responsive__description--title">INVESTOO</h4>
+                                    <p class="responsive__description--tools">WORDPRESS + DIVI</p>
+                                    <p class="responsive__description--details">a comprehensive website to learn about investment fundamentals</p>
+                                    <p class="responsive__description--details">investoo compares the best brokers and helps you to make smarter investment decisions</p>
+                                    <a href="https://www.investoo.de" target="_blank"><button class="responsive__description--button">OPEN WEBSITE</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <a href="#project1" ><img class="btn prev-btn" src="icons/arrow-left.svg" loading="lazy" alt="arrow left"/></a>
-                    <a href="#project2" ><img class="btn next-btn" src="icons/arrow-right.svg" loading="lazy" alt="arrow right"/></a>
                 </div>
                 <div id="experience">
-                    <h3 class="experience__headline">EXPERIENCE</h3>
-                    <div class="timeline">
-                        <div class="timeline__container timeline__container--left">
-                            <div class="timeline__container--content">
-                                <div class="container__content--details">
-                                    <h5 class="container__content--details-date">09/2020 - NOW</h5>
-                                    <h5 class="container__content--details-location">HAMBURG, GERMANY</h5>
+                    <div class="experience">
+                        <h3 class="experience__headline">EXPERIENCE</h3>
+                        <div class="timeline">
+                            <div class="timeline__container timeline__container--left">
+                                <div class="timeline__container--content">
+                                    <div class="container__content--details">
+                                        <h5 class="container__content--details-date">Sep 2020 - Now</h5>
+                                        <h5 class="container__content--details-location">HAMBURG, GERMANY</h5>
+                                    </div>
+                                    <h4 class="container__content--position">TRAINEE WEB DEVELOPMENT</h4>
+                                    <h4 class="container__content--company">NEUEFISCHE GMBH</h4>
+                                    <ul class="container__content--description">
+                                        <li>540 hours of Intensive-Coding-Bootcamp</li>
+                                        <li>Developing an own app in partnership with Check24</li>
+                                    </ul>
                                 </div>
-                                <h4 class="container__content--position">TRAINEE WEB DEVELOPMENT</h4>
-                                <h4 class="container__content--company">NEUEFISCHE GMBH</h4>
-                                <ul class="container__content--description">
-                                    <li>540 hours of Intensive-Coding-Bootcamp</li>
-                                    <li>Developing an own app in partnership with Check24</li>
-                                </ul>
+                            </div>       
+                            <div class="timeline__container timeline__container--right">
+                                <div class="timeline__container--content">
+                                    <div class="container__content--details">
+                                        <h5 class="container__content--details-date">Nov 2018 - Jun 2020</h5>
+                                        <h5 class="container__content--details-location">CUSCO, PERU</h5>
+                                    </div>
+                                    <h4 class="container__content--position">CO-FOUNDER</h4>
+                                    <h4 class="container__content--company">GOBOOKO S.R.L.</h4>
+                                    <ul class="container__content--description">
+                                        <li>Creating an online booking platform for travel experiences with Wordpress</li>
+                                        <li>Acquisition of new tour operators for the platform</li>
+                                        <li>Translating and updating the website content</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>       
-                        <div class="timeline__container timeline__container--right">
-                            <div class="timeline__container--content">
-                                <div class="container__content--details">
-                                    <h5 class="container__content--details-date">11/2018 - 06/2020</h5>
-                                    <h5 class="container__content--details-location">CUSCO, PERU</h5>
+                            <div class="timeline__container timeline__container--left">
+                                <div class="timeline__container--content">
+                                    <div class="container__content--details">
+                                        <h5 class="container__content--details-date">Aug 2016 - Jul 2018</h5>
+                                        <h5 class="container__content--details-location">PERTH, AUSTRALIA</h5>
+                                    </div>
+                                    <h4 class="container__content--position">WORK&TRAVEL</h4>
+                                    <h4 class="container__content--company">NEGUS ENTERPRISES PTY</h4>
                                 </div>
-                                <h4 class="container__content--position">CO-FOUNDER</h4>
-                                <h4 class="container__content--company">GOBOOKO S.R.L.</h4>
-                                <ul class="container__content--description">
-                                    <li>Creating an online booking platform for travel experiences with Wordpress</li>
-                                    <li>Acquisition of new tour operators for the platform</li>
-                                    <li>Translating and updating the website content</li>
-                                </ul>
                             </div>
-                        </div>
-                        <div class="timeline__container timeline__container--left">
-                            <div class="timeline__container--content">
-                                <div class="container__content--details">
-                                    <h5 class="container__content--details-date">08/2016 - 07/2018</h5>
-                                    <h5 class="container__content--details-location">PERTH, AUSTRALIA</h5>
+                            <div class="timeline__container timeline__container--right">
+                                <div class="timeline__container--content">
+                                    <div class="container__content--details">
+                                        <h5 class="container__content--details-date">Apr 2015 - Mar 2016</h5>
+                                        <h5 class="container__content--details-location">AUGSBURG, GERMANY</h5>
+                                    </div>
+                                    <h4 class="container__content--position">PRODUCT MANAGER</h4>
+                                    <h4 class="container__content--company">JUZO GMBH</h4>
+                                    <ul class="container__content--description">
+                                        <li>Responsible for the coordination of a joint venture and production in Brazil</li>
+                                        <li>Research of South American import/export regulations</li>
+                                        <li>Planning new sales strategies for the local market</li>
+                                    </ul>
                                 </div>
-                                <h4 class="container__content--position">WORK&TRAVEL</h4>
-                                <h4 class="container__content--company">NEGUS ENTERPRISES PTY</h4>
                             </div>
-                        </div>
-                        <div class="timeline__container timeline__container--right">
-                            <div class="timeline__container--content">
-                                <div class="container__content--details">
-                                    <h5 class="container__content--details-date">04/2015 - 03/2016</h5>
-                                    <h5 class="container__content--details-location">AUGSBURG, GERMANY</h5>
+                            <div class="timeline__container timeline__container--left">
+                                <div class="timeline__container--content">
+                                    <div class="container__content--details">
+                                        <h5 class="container__content--details-date">Jan 2014 - Jan 2015</h5>
+                                        <h5 class="container__content--details-location">CENTRAL, HONG KONG</h5>
+                                    </div>
+                                    <h4 class="container__content--position">REGIONAL SALES MANAGER</h4>
+                                    <h4 class="container__content--company">TANELEY LIMITED</h4>
+                                    <ul class="container__content--description">
+                                        <li>Trading electronic goods on a B2B basis</li>
+                                        <li>Onboarding new partners and maintaining existing business relationships</li>
+                                    </ul>
                                 </div>
-                                <h4 class="container__content--position">PRODUCT MANAGER</h4>
-                                <h4 class="container__content--company">JUZO GMBH</h4>
-                                <ul class="container__content--description">
-                                    <li>Responsible for the coordination of a joint venture and production in Brazil</li>
-                                    <li>Research of South American import/export regulations</li>
-                                    <li>Planning new sales strategies for the local market</li>
-                                </ul>
                             </div>
-                        </div>
-                        <div class="timeline__container timeline__container--left">
-                            <div class="timeline__container--content">
-                                <div class="container__content--details">
-                                    <h5 class="container__content--details-date">01/2014 - 01/2015</h5>
-                                    <h5 class="container__content--details-location">CENTRAL, HONG KONG</h5>
+                            <div class="timeline__container timeline__container--right">
+                                <div class="timeline__container--content">
+                                    <div class="container__content--details">
+                                        <h5 class="container__content--details-date">Mar 2012 - Sep 2012</h5>
+                                        <h5 class="container__content--details-location">HYDERABAD, INDIA</h5>
+                                    </div>
+                                    <h4 class="container__content--position">INTERNSHIP IN MARKETING AND SALES</h4>
+                                    <h4 class="container__content--company">WINIT LIMITED</h4>
+                                    <ul class="container__content--description">
+                                        <li>B2B support for software-based business solutions</li>
+                                    </ul>
                                 </div>
-                                <h4 class="container__content--position">REGIONAL SALES MANAGER</h4>
-                                <h4 class="container__content--company">TANELEY LIMITED</h4>
-                                <ul class="container__content--description">
-                                    <li>Trading electronic goods on a B2B basis</li>
-                                    <li>Onboarding new partners and maintaining existing business relationships</li>
-                                </ul>
                             </div>
-                        </div>
-                        <div class="timeline__container timeline__container--right">
-                            <div class="timeline__container--content">
-                                <div class="container__content--details">
-                                    <h5 class="container__content--details-date">03/2012 - 09/2012</h5>
-                                    <h5 class="container__content--details-location">HYDERABAD, INDIA</h5>
+                            <div class="timeline__container timeline__container--left">
+                                <div class="timeline__container--content">
+                                    <div class="container__content--details">
+                                        <h5 class="container__content--details-date">Sep 2009 - Sep 2013</h5>
+                                        <h5 class="container__content--details-location">WISMAR, GERMANY</h5>
+                                    </div>
+                                    <h4 class="container__content--position">BACHELOR IN BUSINESS ADMINISTRATION</h4>
+                                    <h4 class="container__content--company">HOCHSCHULE WISMAR</h4>
                                 </div>
-                                <h4 class="container__content--position">INTERNSHIP IN MARKETING AND SALES</h4>
-                                <h4 class="container__content--company">WINIT LIMITED</h4>
-                                <ul class="container__content--description">
-                                    <li>B2B support for software-based business solutions</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline__container timeline__container--left">
-                            <div class="timeline__container--content">
-                                <div class="container__content--details">
-                                    <h5 class="container__content--details-date">09/2009 - 09/2013</h5>
-                                    <h5 class="container__content--details-location">WISMAR, GERMANY</h5>
-                                </div>
-                                <h4 class="container__content--position">BACHELOR IN BUSINESS ADMINISTRATION</h4>
-                                <h4 class="container__content--company">HOCHSCHULE WISMAR</h4>
                             </div>
                         </div>
                     </div>
@@ -172,7 +186,7 @@
                                 <input id="contact__email" class="contact__form--input" type="email" placeholder="EMAIL" name="message" />
                                 <textarea id="contact__message" class="contact__form--input form__input--textarea" rows="10" placeholder="..." name="message"></textarea>
                             </div>
-                            <button type="submit" class="contact__form--button">
+                            <button type="submit" id="contact__send" class="contact__form--button">
                                 SEND MESSAGE
                             </button>
                         </form>
@@ -183,21 +197,15 @@
     </main>
     <footer>
         <div class="footer">
-            <p class="footer__copyright">© 2020 Johann Völzer</p>
+            <p class="footer__copyright">© 2021 Johann Völzer</p>
             <div class="footer__imprint">
-                <a href="https://www.xing.com/profile/Johann_Voelzer3" class="footer__imprint--link" target="_blank">Xing</a>
+                <a href="https://www.linkedin.com/in/johann-v%C3%B6lzer-416a04203/" class="footer__imprint--link" target="_blank">LinkedIn</a>
                 <a href="https://github.com/johannvoelzer" class="footer__imprint--link" target="_blank">Github</a>
             </div>
         </div>
     </footer>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/8.1.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="/__/firebase/8.1.1/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
 </body>
 </html>

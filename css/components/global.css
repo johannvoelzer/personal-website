@@ -1,20 +1,27 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "sans", sans-serif;
-    margin: 0;
-    background: rgb(13, 27, 39);
+  font-family: "sans", sans-serif;
+  margin: 0;
+  background: rgb(13, 27, 39);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 h2 {
-    margin: 0;
-    font-size: 26px;
+  margin: 0;
+  font-size: 22px;
 }
 
 h3 {
-    text-align: center;
-    font-size: 22px;
-    margin-top: 1.5em;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 1.5em;
 }
