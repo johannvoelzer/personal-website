@@ -1,4 +1,4 @@
-@media (max-width: 550px) {
+@media (max-width: 549px) {
   .header-menu {
     display: none;
   }
@@ -49,7 +49,9 @@
   .header-menu__button {
     margin-top: -4px;
     padding: 8px;
-    background: rgb(173, 14, 75);
+  }
+  .parallax:before {
+    height: 800px;
   }
   .parallax-heading {
     margin-bottom: 100px;
@@ -60,14 +62,27 @@
   }
   .projects__responsive {
     display: grid;
-    padding-top: 95px;
     grid-template-columns: calc(50% - 70px) 50%;
   }
-  .btn {
-    top: 340px;
+  .projects__responsive--background {
+    margin: 60px 0;
+    padding-top: 0;
+    border-radius: 10px 0 0 10px;
+  }
+  #project1.projects__responsive {
+    padding-top: 95px;
+  }
+  #project1 .projects__responsive--image {
+    margin-left: 0;
   }
   .projects__responsive--image {
     max-width: 90%;
+    margin: -40px auto;
+  }
+  .projects__responsive--description {
+    margin: 60px -50px 60px -30px;
+    border-radius: 0 10px 10px 0;
+    padding-top: 30px;
   }
   .projects__headline {
     margin-bottom: -95px;
@@ -82,14 +97,11 @@
     font-size: 20px;
   }
   .responsive__description--button {
-    margin: 12px;
+    margin: 20px 0;
   }
   .container__content--details {
     display: flex;
     justify-content: space-between;
-  }
-  .contact__background {
-    margin: 110px 30px;
   }
 }
 
@@ -115,21 +127,26 @@
     padding: 10px;
     font-size: 14px;
   }
+  .parallax:before {
+    height: 1000px;
+  }
   .parallax-heading {
-    margin-bottom: 140px;
+    margin-bottom: 160px;
   }
   .skills-overview__icon {
     padding: 24px;
     height: 70px;
   }
-  .projects__responsive {
-    padding-top: 120px;
-    grid-template-columns: calc(50% - 90px) 50%;
-  }
   .projects__headline {
     margin-bottom: -120px;
   }
+  #project1 .projects__responsive--image {
+    margin-left: 60px;
+  }
+  .projects__responsive--description {
+    margin: 60px -70px 60px -50px;
+  }
   .responsive__description--button {
-    margin: 30px;
+    margin: 20px;
   }
 }
